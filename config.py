@@ -17,7 +17,7 @@ BOT_TOKEN = os.getenv("BOT_TOKEN", "8930334421:AAHE2D6OpyG73Vuw6IVQhaph4bVgClvw3
 # via the no-auth HTML-scrape fallback, just without that tier's extra
 # reliability. Generate one with Telethon's StringSession (same process as
 # ultra-main's own README) and paste it here if you want it wired up.
-SESSION = os.getenv("SESSION", "1BVtsOIUBu1fwD3b5zqRA-auagdCQ3FnWyZ9oCjxFcIQl33EIQrXTmgyvKIG9XKrjpqHO5aweNVc1rAwmlN9I1lHJLE-8EIKgDPkkiSKyht-cb4EM0D0jqgwQHhGnIwT3aDc5zOrQprbV2sU6_rXyIMgfyp8J23XJFWMyGxVAdjlqgyUCOrx5zvfiSx8HQWq8buc60p6KRprdZqIkuRF9Uillvh7M9DW72-twHvy2Mu8wsBK2vomC3zF1SWEirb1xfk0B8r_hIlZG9O-HBKA5WkFlG47qjyrcK2nm111MGUGVTOZT2Vpt-Sq8TQRUC__oYz71CaokWJ6zQEPlliA0Q24mPhUHMAw=")
+SESSION = os.getenv("SESSION", "1AZWarzcBu05VzVtvhcIZvE8HBtYfT3K6JUeR9n1kvua24ufHs6A-blFqfztzBwgdpBjs7YThEepbfT_JgLZ44l_LnDwD-vSybauAfGu5ccJxnoVMqORpTNgx8j-M9ynKSvSO2wp9b1XBTVZiHjLDYwYe6b0qArzrUFr0X4o5sg_IZeM2rS6Gpla2CHmrfww2_6dmh7Ca9uc3K00Oh1au_AArOikG_drgACfOc4EG5FwWRlZoJIx8OXnFQ_AREuQoKSLAaRxNqWyuPVNURxhE6cq7dzdzmuAW2pHxkl9flUoYDZ7hBNrLDh_G638zTM1gy6C98W4XNnIN7T-LYmkqwnJTOH5_FuE=")
 OWNER_ID = int(os.getenv("OWNER_ID", "8931907813"))
 
 TG_BOT_WORKERS = int(os.getenv("TG_BOT_WORKERS", "8"))   # 4→8: zyada parallel Telegram connections
