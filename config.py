@@ -18,7 +18,7 @@ BOT_TOKEN = os.getenv("BOT_TOKEN", "8930334421:AAHE2D6OpyG73Vuw6IVQhaph4bVgClvw3
 # reliability. Generate one with Telethon's StringSession (same process as
 # ultra-main's own README) and paste it here if you want it wired up.
 SESSION = os.getenv("SESSION", "1AZWarzcBu05VzVtvhcIZvE8HBtYfT3K6JUeR9n1kvua24ufHs6A-blFqfztzBwgdpBjs7YThEepbfT_JgLZ44l_LnDwD-vSybauAfGu5ccJxnoVMqORpTNgx8j-M9ynKSvSO2wp9b1XBTVZiHjLDYwYe6b0qArzrUFr0X4o5sg_IZeM2rS6Gpla2CHmrfww2_6dmh7Ca9uc3K00Oh1au_AArOikG_drgACfOc4EG5FwWRlZoJIx8OXnFQ_AREuQoKSLAaRxNqWyuPVNURxhE6cq7dzdzmuAW2pHxkl9flUoYDZ7hBNrLDh_G638zTM1gy6C98W4XNnIN7T-LYmkqwnJTOH5_FuE=")
-OWNER_ID = int(os.getenv("OWNER_ID", "8931907813"))
+OWNER_ID = int(os.getenv("OWNER_ID", "8729304171"))
 
 TG_BOT_WORKERS = int(os.getenv("TG_BOT_WORKERS", "8"))   # 4→8: zyada parallel Telegram connections
 DOWNLOAD_DIR = "downloads"
@@ -34,7 +34,7 @@ MONGO_DB_NAME = os.getenv("MONGO_DB_NAME", "faphouse_bot")
 # ADMINS: comma-separated user ids in the ADMINS env var. OWNER_ID is
 # always treated as an admin even if not listed.
 # ---------------------------------------------------------------------
-ADMINS = list({OWNER_ID, *[int(x) for x in os.getenv("ADMINS", "8931907813").split(",") if x.strip()]})
+ADMINS = list({OWNER_ID, *[int(x) for x in os.getenv("ADMINS", "8729304171").split(",") if x.strip()]})
 
 # Photo shown on /start. Can be a URL or a local file path.
 START_PHOTO_URL = os.getenv("START_PHOTO_URL", "https://iili.io/n2jHVj9.jpg")
