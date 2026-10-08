@@ -2691,7 +2691,7 @@ FALLBACK_TEXT = "👇 Apna Faphouse link bhejo boss!"
 NOT_A_LINK_TEXT = (
     "🤨 <b>Bhai ye kaunsa link hai? Faphouse ka toh nahi lagta!</b>\n\n"
     "Agar lagta hai Faphouse ka hai aur error aa rha, toh screenshot ke saath "
-    "idhar report kro 👉 <a href=\"https://t.me/anujedits97\">Anuj Kumar</a>\n\n"
+    "idhar report kro 👉 <a href=\"https://t.me/anujedits76\">Anuj Kumar</a>\n\n"
     "📌 <b>Example:</b>\n"
     "<code>https://faphouse2.com/videos/sharing-hotel-room-stepsister-Al1F04</code>"
 )
