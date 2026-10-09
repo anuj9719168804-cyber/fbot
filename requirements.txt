@@ -60,3 +60,5 @@ bgutil-ytdlp-pot-provider
 # fpo_downloader.py browser login (Turnstile on the login form). Uses the system Chromium the Dockerfile
 # already installs (no `playwright install` download needed); without it login just falls back to /setcookies.
 playwright>=1.47
+# Playwright fork without the automation leaks Turnstile looks for; fpo_downloader falls back to plain playwright if missing
+patchright>=1.50
