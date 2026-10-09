@@ -55,13 +55,3 @@ curl_cffi>=0.10,<0.14
 # plugin just won't find a provider to use and yt-dlp falls back exactly
 # as if this weren't installed at all.
 bgutil-ytdlp-pot-provider
-
-# porn_fetch_downloader.py backend — maintained per-site API packages
-# (same ones Porn_Fetch itself uses), installed straight from their repos
-eaf_base_api @ git+https://github.com/EchterAlsFake/eaf_base_api
-unofficial-api-for-xnxx @ git+https://github.com/EchterAlsFake/unofficial-api-for-xnxx
-unofficial-api-for-xvideos @ git+https://github.com/EchterAlsFake/unofficial-api-for-xvideos
-unofficial-api-for-xhamster @ git+https://github.com/EchterAlsFake/unofficial-api-for-xhamster
-unofficial-api-for-youporn @ git+https://github.com/EchterAlsFake/unofficial-api-for-youporn
-unofficial-api-for-beeg @ git+https://github.com/EchterAlsFake/unofficial-api-for-beeg
-unofficial-api-for-xfreehd @ git+https://github.com/EchterAlsFake/unofficial-api-for-xfreehd
