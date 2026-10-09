@@ -52,10 +52,10 @@ RUN git clone --single-branch --branch ${BGUTIL_POT_VERSION} --depth 1 \
 # startup — see that file's docstring. Pinned to the v3.5.0 tag rather
 # than a branch so this build doesn't silently start pulling in
 # FlareSolverr's own future breaking changes.
-RUN git clone --branch v3.5.0 --depth 1 https://github.com/FlareSolverr/FlareSolver.git /opt/flaresolver \
-    && python3 -m venv /opt/flaresolver/venv \
-    && /opt/flaresolver/venv/bin/pip install --no-cache-dir --upgrade pip \
-    && /opt/flaresolver/venv/bin/pip install --no-cache-dir -r /opt/flaresolver/requirements.txt
+RUN git clone --branch v3.5.0 --depth 1 https://github.com/FlareSolverr/FlareSolverr.git /opt/flaresolverr \
+    && python3 -m venv /opt/flaresolverr/venv \
+    && /opt/flaresolverr/venv/bin/pip install --no-cache-dir --upgrade pip \
+    && /opt/flaresolverr/venv/bin/pip install --no-cache-dir -r /opt/flaresolverr/requirements.txt
 
 # YouTube now requires solving a JS challenge before yt-dlp can get a
 # playable URL — yt-dlp needs an external JS runtime to do that. This
