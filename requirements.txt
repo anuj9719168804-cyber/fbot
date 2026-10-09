@@ -55,3 +55,8 @@ curl_cffi>=0.10,<0.14
 # plugin just won't find a provider to use and yt-dlp falls back exactly
 # as if this weren't installed at all.
 bgutil-ytdlp-pot-provider
+
+
+# fpo_downloader.py browser login (Turnstile on the login form). Uses the system Chromium the Dockerfile
+# already installs (no `playwright install` download needed); without it login just falls back to /setcookies.
+playwright>=1.47
