@@ -58,4 +58,25 @@ else
     echo "[ytnode] Bot will still run — YouTube quality just relies on the PO-token path alone."
 fi
 
+# cf-bypass — Turnstile token service for fpo.xxx's login (turnstile_solver.py). Own Chrome + Xvfb, port 8742.
+# Failure is non-fatal: fpo_downloader falls back to its older login routes.
+if [ "${CF_BYPASS_ENABLED:-1}" != "0" ] && [ -d /app/cf-bypass ] && command -v bun >/dev/null 2>&1; then
+    (cd /app/cf-bypass && PORT=8742 exec bun src/index.ts) > /tmp/cf-bypass.log 2>&1 &
+    CFB_PID=$!
+    CFB_UP=0
+    for i in $(seq 1 20); do
+        if wget -q -O- http://127.0.0.1:8742/ >/dev/null 2>&1 || wget -S -q -O- http://127.0.0.1:8742/ 2>&1 | grep -q "HTTP/"; then
+            CFB_UP=1
+            break
+        fi
+        sleep 1
+    done
+    if [ "$CFB_UP" = "1" ] && kill -0 "$CFB_PID" 2>/dev/null; then
+        echo "[cf-bypass] OK — Turnstile token service is up on :8742"
+    else
+        echo "[cf-bypass] WARNING — did not come up after 20s. Last log lines:"
+        tail -n 20 /tmp/cf-bypass.log 2>/dev/null
+    fi
+fi
+
 exec python3 main.py
