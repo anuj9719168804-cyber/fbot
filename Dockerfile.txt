@@ -64,6 +64,12 @@ RUN git clone --branch v3.5.0 --depth 1 https://github.com/FlareSolverr/FlareSol
 # instead (opts["js_runtimes"] = {"node": {}}) — one JS runtime for both
 # jobs instead of two.
 
+# cf-bypass/ — Turnstile solver service (real Chrome on Xvfb via rebrowser-puppeteer; see turnstile_solver.py). It runs on
+# Bun (copied from the official image), is started by entrypoint.sh on :8742, and is what fpo_downloader's login asks for
+# the Turnstile token.
+COPY --from=oven/bun:1 /usr/local/bin/bun /usr/local/bin/bun
+ENV CHROME_PATH=/usr/bin/chromium CHROME_BIN=/usr/bin/chromium
+
 COPY requirements.txt .
 RUN pip install --no-cache-dir --upgrade pip setuptools wheel
 RUN pip install --no-cache-dir -r requirements.txt
@@ -78,6 +84,9 @@ COPY . .
 # on; --omit=dev keeps this to just express + @distube/ytdl-core, no
 # dev tooling needed for a plain `node server.js` run.
 RUN cd ytnode && npm install --omit=dev
+
+# cf-bypass dependencies (after COPY . . for the same reason as ytnode above)
+RUN cd cf-bypass && bun install
 
 RUN chmod +x /app/entrypoint.sh
 
