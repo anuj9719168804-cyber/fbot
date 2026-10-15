@@ -36,7 +36,7 @@ Werkzeug==2.3.8
 # release for the same reason src's requirements.txt pins it: an
 # unpinned "yt-dlp" can silently stay on a stale cached build that no
 # longer matches a site's current page structure.
-yt-dlp[default,curl-cffi]
+yt-dlp[default,curl-cffi]>=2026.07.04
 
 # JS runtime yt-dlp needs to solve YouTube's challenge (required since
 # yt-dlp 2025.11.12) — installed as a pip package specifically because
