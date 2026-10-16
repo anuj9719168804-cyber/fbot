@@ -41,7 +41,7 @@ RUN_MODE = os.environ.get("RUN_MODE", "all").strip().lower()
 ACTIVE_BOTS_STR = os.getenv("ACTIVE_TELEGRAM_BOTS", "@kevinhartrobot,@iPapkornA2bot")
 ACTIVE_BOTS = [bot.strip() for bot in ACTIVE_BOTS_STR.split(",") if bot.strip()]
 
-FILMYZILLA_DOMAIN = "https://www.filmyzilla70.com"
+FILMYZILLA_DOMAIN = "https://www.filmyzilla74.com"
 ANIMAHD_DOMAIN = "https://animahd.com"
 
 HEADERS = {
