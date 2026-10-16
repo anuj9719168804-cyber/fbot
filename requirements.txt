@@ -20,10 +20,9 @@ pymongo==4.9.2
 Flask==2.3.3
 brotli==1.1.0
 Werkzeug==2.3.8
-google-api-python-client
-google-auth-httplib2
-google-auth-oauthlib
 google-api-python-client==2.108.0
+google-auth>=2.23
+google-auth-httplib2
 google-auth-oauthlib==1.1.0
 flask-cors==4.0.0
 
