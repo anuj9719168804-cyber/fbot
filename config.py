@@ -168,7 +168,7 @@ DRIVE_FOLDER_ID = os.getenv("DRIVE_FOLDER_ID", "")                  # Drive fold
 # =====================================================================
 GOFILE_API_URL = os.getenv("GOFILE_API_URL", "https://api.gofile.io")
 GOFILE_UPLOAD_URL = os.getenv("GOFILE_UPLOAD_URL", "https://{server}.gofile.io/contents/uploadfile")   # {server} = best server
-GOFILE_TOKEN = os.getenv("GOFILE_TOKEN", "")                        # optional account token used when a user has none of their own
+GOFILE_TOKEN = os.getenv("GOFILE_TOKEN", "XymofifZUjDRp0BbFDUTRZz1dvTmG4He")                        # optional account token used when a user has none of their own
 GOFILE_CHUNK_SIZE = int(os.getenv("GOFILE_CHUNK_SIZE", str(1024 * 1024)))          # bytes read per upload step / progress tick
 GOFILE_SERVERS_TIMEOUT = int(os.getenv("GOFILE_SERVERS_TIMEOUT", "30"))            # seconds, server-list request
 GOFILE_UPLOAD_READ_TIMEOUT = int(os.getenv("GOFILE_UPLOAD_READ_TIMEOUT", "600"))   # seconds without data from Gofile
