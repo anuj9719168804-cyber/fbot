@@ -18,7 +18,7 @@ try:
     from config import TMDB_API_KEY
 except Exception:  # config unavailable (tests / standalone use)
     import os
-    TMDB_API_KEY = os.getenv("TMDB_API_KEY", "")
+    TMDB_API_KEY = os.getenv("TMDB_API_KEY", "61e2290429798c561450eb56b26de19b")
 
 logger = logging.getLogger(__name__)
 
