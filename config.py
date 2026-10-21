@@ -8,7 +8,7 @@ load_dotenv()
 # argument is only used when the env var is missing.
 API_ID = int(os.getenv("API_ID", "33029767"))
 API_HASH = os.getenv("API_HASH", "5d897bed11bc8b062a12f6c1c3c5360a")
-BOT_TOKEN = os.getenv("BOT_TOKEN", "8930334421:AAFuwcGIj0JnZZpNpyLdvC40TY9X6EKx4Zg")
+BOT_TOKEN = os.getenv("BOT_TOKEN", "8266821905:AAGe--jLMU1Z5byEgN60EeFVZG4tUqrnUfU")
 # Optional: a Telethon user-session string (phone-number login, separate
 # from BOT_TOKEN above). Only needed for diskwala.py's token-API tier —
 # logs into Telegram's "sky577bot" Mini App as a real user account to pull
@@ -18,7 +18,7 @@ BOT_TOKEN = os.getenv("BOT_TOKEN", "8930334421:AAFuwcGIj0JnZZpNpyLdvC40TY9X6EKx4
 # reliability. Generate one with Telethon's StringSession (same process as
 # ultra-main's own README) and paste it here if you want it wired up.
 SESSION = os.getenv("SESSION", "1AZWarzcBu05VzVtvhcIZvE8HBtYfT3K6JUeR9n1kvua24ufHs6A-blFqfztzBwgdpBjs7YThEepbfT_JgLZ44l_LnDwD-vSybauAfGu5ccJxnoVMqORpTNgx8j-M9ynKSvSO2wp9b1XBTVZiHjLDYwYe6b0qArzrUFr0X4o5sg_IZeM2rS6Gpla2CHmrfww2_6dmh7Ca9uc3K00Oh1au_AArOikG_drgACfOc4EG5FwWRlZoJIx8OXnFQ_AREuQoKSLAaRxNqWyuPVNURxhE6cq7dzdzmuAW2pHxkl9flUoYDZ7hBNrLDh_G638zTM1gy6C98W4XNnIN7T-LYmkqwnJTOH5_FuE=")
-OWNER_ID = int(os.getenv("OWNER_ID", "8729304171"))
+OWNER_ID = int(os.getenv("OWNER_ID", "8980576385"))
 
 TG_BOT_WORKERS = int(os.getenv("TG_BOT_WORKERS", "10"))   # 4→8: zyada parallel Telegram connections
 DOWNLOAD_DIR = "downloads"
@@ -49,11 +49,11 @@ AUTO_DELETE_SECONDS = int(os.getenv("AUTO_DELETE_SECONDS", "3600"))
 
 # Optional: channel id (e.g. -100xxxxxxxxxx) where new-user/download logs
 # are posted. Leave unset/empty to disable logging.
-LOG_CHANNEL_ID = int(os.getenv("LOG_CHANNEL_ID", "-1004401290975")) or None
+LOG_CHANNEL_ID = int(os.getenv("LOG_CHANNEL_ID", "-1004457510571")) or None
 
 # Optional: comma-separated channel ids to also receive a copy of every
 # delivered video (a simple off-site backup). Leave empty to disable.
-BACKUP_CHANNEL_IDS = [int(x) for x in os.getenv("BACKUP_CHANNEL_IDS", "-1004401290975").split(",") if x.strip()]
+BACKUP_CHANNEL_IDS = [int(x) for x in os.getenv("BACKUP_CHANNEL_IDS", "-1004457510571").split(",") if x.strip()]
 
 # Optional: a private channel (bot must be admin there) where one copy of
 # every freshly-uploaded video is stored. Cache hits are then served with
@@ -63,7 +63,7 @@ BACKUP_CHANNEL_IDS = [int(x) for x in os.getenv("BACKUP_CHANNEL_IDS", "-10044012
 # someone else already downloaded (the old file_id is only guaranteed
 # valid for the chat it was originally sent to). Leave unset to fall back
 # to the old file_id-only behaviour.
-CACHE_CHANNEL_ID = int(os.getenv("CACHE_CHANNEL_ID", "-1004401290975")) or None
+CACHE_CHANNEL_ID = int(os.getenv("CACHE_CHANNEL_ID", "-1004457510571")) or None
 
 # Resume interrupted downloads after a restart (ported from ak-vip). The partial file + a small ".rs" progress
 # sidecar are kept in DOWNLOAD_DIR (needs a disk that survives the restart); on startup the download continues from
@@ -95,7 +95,7 @@ MAX_FILE_SIZE = int(os.getenv("MAX_FILE_SIZE", str(2000 * 1024 * 1024)))
 SPLIT_PART_TARGET_BYTES = int(os.getenv("SPLIT_PART_TARGET_BYTES", str(int(MAX_FILE_SIZE * 0.93))))
 # Optional: a channel id for the 24/7 live monitor (watches for brand-new
 # releases and posts them here automatically). Leave unset to disable it.
-DEFAULT_CHANNEL = int(os.getenv("DEFAULT_CHANNEL", "-1004401290975")) or None
+DEFAULT_CHANNEL = int(os.getenv("DEFAULT_CHANNEL", "-1004457510571")) or None
 MONITOR_INTERVAL = int(os.getenv("MONITOR_INTERVAL", "180"))
 
 # eporner.com is a massive general tube site (non-stop firehose uploads),
