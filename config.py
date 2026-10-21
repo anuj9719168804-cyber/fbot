@@ -152,7 +152,7 @@ MOVIE_NAME = os.getenv("MOVIE_NAME", "").strip()                    # title to s
 RUN_MODE = os.getenv("RUN_MODE", "all").strip().lower()             # "web" | "telegram" | "all"
 # Telegram bots searched in "telegram"/"all" mode (comma separated)
 ACTIVE_TELEGRAM_BOTS = [b.strip() for b in os.getenv("ACTIVE_TELEGRAM_BOTS", "@kevinhartrobot,@iPapkornA2bot").split(",") if b.strip()]
-FILMYZILLA_DOMAIN = os.getenv("FILMYZILLA_DOMAIN", "https://www.filmyzilla74.com")
+FILMYZILLA_DOMAIN = os.getenv("FILMYZILLA_DOMAIN", "https://www.filmyzilla75.com")
 ANIMAHD_DOMAIN = os.getenv("ANIMAHD_DOMAIN", "https://animahd.com")
 ANIMAHD_GATE_DOMAIN = os.getenv("ANIMAHD_GATE_DOMAIN", "animesuki.online")   # AnimaHD's redirect/"gate" host (bare domain, no https://)
 DOWNLOADER_SOCKET_TIMEOUT = int(os.getenv("DOWNLOADER_SOCKET_TIMEOUT", "300"))   # seconds
